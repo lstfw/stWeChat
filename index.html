@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>公司简介</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        html,body,.swiper-container{
+            width: 100%;
+            height: 100%;
+            font-family: "Microsoft Yahei", "微软雅黑", Tahoma, Arial, Helvetica, STHeiti;
+        }
+        img{
+            width: 100%;
+        }
+        .war{
+            width: 320px;
+            height: 480px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -160px;
+            margin-top: -240px;
+            background: #000000;
+        }
+        @-webkit-keyframes start {
+            0%,30% {opacity: 0;-webkit-transform: translate(0,-10px);}
+            60% {opacity: 1;-webkit-transform: translate(0,0);}
+            100% {opacity: 0;-webkit-transform: translate(0,15px);}
+        }
+        @-moz-keyframes start {
+            0%,30% {opacity: 0;-moz-transform: translate(0,-10px);}
+            60% {opacity: 1;-moz-transform: translate(0,0);}
+            100% {opacity: 0;-moz-transform: translate(0,15px);}
+        }
+        @keyframes start {
+            0%,30% {opacity: 0;transform: translate(0,-10px);}
+            60% {opacity: 1;transform: translate(0,0);}
+            100% {opacity: 0;transform: translate(0,15px);}
+        }
+        #array{
+            position:absolute;z-index:999;-webkit-animation: start 1.5s infinite ease-in-out;width:28px;height:24px; bottom:30px; left:50%;margin-left: -14px;
+        }
+        .cooperation{
+            margin-top: 10%;
+            position: relative;
+        }
+        .cooperation img{
+            position: absolute;
+        }
+        .fm{
+            position: relative;
+        }
+        .fm img{
+            position: absolute;
+        }
+        .bg{
+            background: url("img/bg.png")  no-repeat;
+            background-size: 100% 100%;
+        }
+        .footer{
+            position: fixed;
+            bottom: 50px;
+            width: 100%;
+        }
+        .footer p{
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        @media screen and (min-width: 340px) {
+            .cooperation{
+                margin-top: 15%;
+            }
+
+        }
+        @media screen and (min-width: 760px) {
+            .cooperation{
+                margin-top: 5%;
+            }
+            .footer p{
+                font-size: 18px;
+            }
+
+        }
+
+       /* .swiper-container {
+            width: 375px;
+            height: 627px;
+        }*/
+    </style>
+</head>
+<body>
+
+<div class="swiper-container swiper-container-h">
+    <div class="swiper-wrapper">
+        <!--封面-->
+        <div class="swiper-slide bg">
+            <img src="img/bgLogo.png" class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0s">
+            <div class="fm">
+                <img src="img/fm1_02.png" class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+                <img src="img/fm2_03.png" class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0.6s">
+                <img src="img/fm3_03.png" class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+                <img src="img/fm4_03.png" class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="0.2s">
+                <img src="img/fm5_03.png" class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="0.2s">
+                <img src="img/fm6_03.png" class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                <img src="img/fm7_03.png" class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                <img src="img/fm8_03.png" class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+            </div>
+            <div class="footer ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                <p>主管单位：中国人民银行</p>
+                <p>神通征信有限公司</p>
+            </div>
+
+        </div>
+        <!--简介-->
+        <div class="swiper-slide">
+            <img class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0s" src="img/logo.png">
+            <img class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0.3s" src="img/img6.png">
+            <img class="ani profile" swiper-animate-effect="zoomInDown" swiper-animate-duration="1s" swiper-animate-delay="0.5s" src="img/img7.png">
+        </div>
+
+        <!--资质-->
+        <div class="swiper-slide">
+            <div class="swiper-container swiper-container-v">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img  src="img/logo.png">
+                        <img  src="img/img4.png">
+                        <img  src="img/img5.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img  src="img/logo.png">
+                        <img  src="img/img4.png">
+                        <img  src="img/img8.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img  src="img/logo.png">
+                        <img  src="img/img4.png">
+                        <img  src="img/img9.png">
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-v"></div>
+            </div>
+            <!--<img class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0s" src="img/logo.png">
+            <img class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0.3s" src="img/img4.png">
+            <img class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s" src="img/img5.png">-->
+        </div>
+        <!--合作伙伴-->
+        <div class="swiper-slide">
+            <img class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0s" src="img/logo.png">
+            <img class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0.3s" src="img/img1.png">
+            <div class="cooperation">
+                <img class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s" src="img/img2.png">
+                <img class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s" src="img/img3.png">
+            </div>
+        </div>
+
+
+    </div>
+    <!--箭头-->
+    <img src="img/jt.png" id="array">
+
+</div>
+
+
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper.animate.min.js"></script>
+
+<script>
+    scaleW=window.innerWidth;
+    scaleH=window.innerHeight;
+    if(scaleH < scaleW)
+        alert('请使用移动设备访问,或者使用谷歌手机模拟调试器访问')
+
+    var mySwiper = new Swiper('.swiper-container-h', {
+        direction : 'vertical',
+        // 如果需要分页器
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+            swiperAnimateCache(swiper); //隐藏动画元素
+            swiperAnimate(swiper); //初始化完成开始动画
+        },
+        onSlideChangeEnd: function(swiper){
+            swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+            var  array =  document.getElementById('array')
+            if(swiper.activeIndex == swiper.slides.length-1){
+                array.style.display = 'none'
+            }else{
+                array.style.display = 'block'
+            }
+        }
+    })
+
+    var swiperV = new Swiper('.swiper-container-v', {
+        pagination: '.swiper-pagination-v',
+        paginationClickable: true,
+        spaceBetween: 50
+    });
+</script>
+</body>
+
+</body>
+</html>
